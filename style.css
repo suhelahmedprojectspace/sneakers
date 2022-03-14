@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playball&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.4);
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    /* #ce6001 */
+    margin: 30px 0px;
+    
+}
+.navbar .navbar_logo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar_logo h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar_logo ul{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar_logo ul li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+.navbar_logo ul li:hover{
+    border-bottom: 3px solid #ce6001;
+}
+.navbar_right{
+    display: flex;
+    position: relative;
+}
+.navbar_right img{
+    width: 25px;
+    background-size: cover;
+    height: 25px;
+    margin:0px 10px;
+}
+.navbar_right #model{
+    width: 300px;
+    position: absolute;
+    top:40px;
+    right: -70px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.navbar_right #model h3{
+  text-transform: capitalize;
+  padding: 10px;
+  font-size: 20px;
+
+}
+.navbar_right #model .model_info{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+  
+   
+}
+.navbar_right #model .model_info #model_img{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 4px;
+}
+.navbar_right #model .model_info p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+.navbar_right #model .model_amount{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+   
+}
+.navbar_right #model .checkout{
+    background-color: #FF4500;
+    padding: 10px;
+    width: 200px;
+    border:none;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 4px;
+    color:white;
+}
+.navbar_right #cart_no{
+    cursor: pointer;
+    background-color: #FF4500;
+    border-radius: 50%;
+    text-align: center;
+    color:white;
+    width: 20px;
+    font-size: 14px;
+    height: 20px;
+    position: absolute;
+    padding: 2px;
+    margin-left: 25px;
+    display: none;
+}
+.main_contianer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.container{
+    width: 70vw;
+    display: flex;
+  
+}
+.container .img_container #big{
+    width: 300px;
+    border-radius: 10px;
+}
+/* 
+.container .img_container #big:hover{
+    transform: scale(1.5);
+} */
+.container .img_container .mini_img_container{
+     display: flex;
+}
+.container .img_container .mini_img_container img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.container .text_container{
+    margin:0px 70px;
+    padding:10px;
+    
+}
+.container .text_container .sneakers{
+    color:#FF4500;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.container .text_container .text_pa h1{
+   margin: 10px 0px;
+  
+    
+}
+.container .text_container .text_pa .body_text{
+    margin: 30px 0px;
+    color:rgba(0, 0, 0, 0.8)
+}
+.container .text_container .text_pa .name{
+    font-size: 40px;
+}
+.container .text_container .text_pa .price{
+    display: flex;
+    
+}
+.container .text_container .text_pa .btn{
+    display: flex;
+}
+.container .text_container .text_pa .btn input{
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+}
+.container .text_container .text_pa .btn input:focus{
+    outline: none;
+}
+.container .text_container .text_pa .btn .btn_add button{
+    background-color: #FF4500;
+    padding: 10px;
+    width: 200px;
+    border:none;
+    margin-left: 20px;
+    border-radius: 4px;
+    color:white;
+}
+.container .text_container .text_pa .btn .btn_l{
+    width: 30px;
+    padding: 10px;
+    text-align: center;
+    border:none;
+    border-radius: 4px;
+
+}
+.container .text_container .text_pa .price p{
+    margin:15px 20px;
+    color: #ce6001;
+}
+

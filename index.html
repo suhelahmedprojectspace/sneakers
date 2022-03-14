@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <header>
+    <div class="main">
+      <div class="navbar">
+        <div class="navbar_logo">
+          <h1>sneakers</h1>
+          <ul>
+            <li>Collection</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="navbar_right">
+          <img src="images/icon-cart.svg" alt="cart" onclick="check()">
+          <div id="cart_no">0</div>
+          <div id="model">
+            <h3>cart</h3>
+            <hr>
+            <div class="model_info">
+              <img id="model_img" src="images/image-product-1-thumbnail.jpg" alt="product_img">
+              <p>Fall Limited Edition Sneakers</p>
+            </div>
+            <div class="model_amount">
+              <p>$</p>
+              <p id="cost">125.00</p>
+              <p>*</p>
+              <p id="amount">0</p>
+
+              &nbsp;<b>
+                <p id="total"></p>
+              </b>
+            </div>
+            <button class="checkout">checkout</button>
+          </div>
+          <img src="images/image-avatar.png" alt="profile">
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="main_contianer">
+    <div class="container">
+      <div class="img_container">
+        <img src="images/image-product-1.jpg" alt="big_shoes" id="big">
+        <div class="mini_img_container">
+          <img src="images/image-product-1.jpg" alt="product1 " id="img1" onclick="changeImage1()">
+          <img src="images/image-product-2.jpg" alt="product1" id="img2" onclick="changeImage2()">
+          <img src="images/image-product-3.jpg" alt="product1" id="img3" onclick="changeImage3()">
+          <img src="images/image-product-4.jpg" alt="product1" id="img4" onclick="changeImage4()">
+        </div>
+      </div>
+      <div class="text_container">
+        <p class="sneakers">sneakers company</p>
+        <div class="text_pa">
+          <h1 class="name">Fall Limited Edition Sneakers</h1>
+          <p class="body_text">These low-profile sneakers are perfect causual wear companion.Features a durable rubber
+            sole, they can
+            withsand
+            everything the weather can offer.
+          </p>
+          <div class="price">
+            <h1>$125.00</h1>
+            <p>50%</p>
+          </div>
+
+          <div class="btn">
+            <div>
+              <button onclick="minus()" class="btn_l"><i class="fa fa-minus"></i></button>
+              <input type="text" readonly id="number_prd" value="1">
+              <button onclick="plus()" class="btn_l"><i class="fa fa-plus"></i></button>
+            </div>
+            <div class="btn_add">
+              <button onclick="addcart()">Add to cart</button>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+  </section>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
